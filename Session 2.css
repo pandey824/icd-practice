@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	text-align: center;
+	background-color: rgb(247, 216, 203);
+}
+
+h1 {
+	color: rgb(50, 18, 58);
+}
+
+h2 {
+	color: red;
+}
+
+p {
+	color: royalblue;
+}
+
+div.border {
+	border: royalblue;
+	border-width: 0.1cm;
+	border-style: dashed;
+}
+
+li {
+	display: inline;
+}
+
+span {
+	display: block;
+}
+
+h3.hidden {
+	display: none;
+}
+
+div.static {
+	position: static;
+	border: 3px solid #815ce6;
+}
+
+div.relative {
+	position: relative;
+	left: 30px;
+	border: 3px solid #73ad21;
+}
+
+div.fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 300px;
+	border: 3px solid #73ad21;
+}
+
+div.rel {
+	position: relative;
+	width: 400px;
+	height: 200px;
+	border: 3px solid #73ad21;
+}
+
+div.absolute {
+	position: absolute;
+	top: 80px;
+	right: 0;
+	width: 200px;
+	height: 100px;
+	border: 3px solid #73ad21;
+}
+
+div.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	padding: 5px;
+	background-color: #cae8ca;
+	border: 2px solid #4caf50;
+}
+
+span.a {
+	display: inline; /* the default for span */
+	position: relative;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid blue;
+	background-color: yellow;
+}
+
+span.b {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid blue;
+	background-color: yellow;
+}
+
+span.c {
+	display: block;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid blue;
+	background-color: yellow;
+}
+
+img.trnsp {
+	opacity: 0.5;
+}
+
+img.trnsp:hover {
+	opacity: 1.0;
+}

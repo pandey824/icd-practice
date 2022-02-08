@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JavaScript Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src = "practice.js"></script>
+  <link rel = "stylesheet" href = "practice.css">
+</head>
+<body>
+
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="pic_bulbon.gif" width="30" height="30" class="d-inline-block align-top" alt="">
+      I C D
+    </a>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <div class = "anima">
+
+  </div>
+  <h1>JavaScript</h1>
+  <button type = "button" onclick = "document.getElementById('demo').innerHTML = Date()">CLICK HERE</button>
+  
+  
+  <p id="demo"></p>
+  <hr>
+  <p id = "demo2" style = "display:none">Hey today is the wonderful day at work</p>
+  <button type = "button" onclick = "document.getElementById('demo2').style.display='block'">CLICK HERE</button>
+  
+
+  
+<p id="hide">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('hide').style.display='none'">Click Me!</button>
+<hr>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="show" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('show').style.display='block'">Click Me!</button>
+
+</script>
+<div class = "spacer s2"></div>
+<div id= "trigger1  " class = "spacer s0"></div>
+<div id = "animate1"  class = "box2 skin">
+  <p> Lets try out some java script with css part</p>
+  <a href ="#"   class = "viewSource">View source</a>
+</div>
+<div class = "spacer s2">
+
+  <img src = "1643312721arduino.svg">
+
+
+  <div class = "scroll-up-btn">
+    <i class = "fas fa-angel-up"></i>
+  </div>
+
+  <h2>Details</h2>
+  <hr>
+<div class = "grid-container">
+    
+    
+  <form name="formk3" onsubmit="return validForm()" method="post">
+    <table   cellspacing="10" name="tb">
+    <tr class = "grid-item">
+      <td>First Name*</td>
+      <td><input type="text" name="fn"></td>
+    </tr>
+    <tr class = "grid-item">
+      <td>Middle Name</td>
+      <td><input type="text" name="mn"></td>
+    </tr>
+
+    <tr class = "grid-item">
+      <td>Last Name*</td>
+      <td><input type="text" name="ln"></td>
+    </tr>
+    <tr class = "grid-item">
+      <td>Address*</td>
+      <td><input type="text" name="ad"></td>
+    </tr>	
+
+    <tr class = "grid-item">
+      <td>Mobile No*</td>
+      <td><input type="number" name="mno"></td>
+    </tr>
+    <tr class = "grid-item">
+      <td>ICD Interns data</td>
+      <td><input type="text" name="fch"></td>
+    </tr>
+    </table>
+    <table   cellspacing="10" name="tb1">
+      <tr class = "grid-item">
+        <td><input type="submit" name="sub" value="Submit"><td>
+      </tr>	
+    </table>
+  </form>
+</div>
+  <script>
+          function validForm() {
+    var x = document.forms["formk3"]["fn"];
+    var y = document.forms["formk3"]["ln"];
+    var z = document.forms["formk3"]["ad"];
+    var mob=document.forms["formk3"]["mno"].value;
+    var ch=document.forms["formk3"]["fch"].value;
+    var q=x.value;
+    var check=q.slice(0,1);
+    var j=typeof mob;
+    var m=mob.toString();
+    if (x.value == "") {
+    window.alert("Please Enter First Name!");
+    x.focus();
+    return false;
+    }
+    if (y.value == "") {
+    window.alert("Please Enter Last Name!");
+    y.focus();
+    return false;
+    }
+    if (z.value == "") {
+    window.alert("Address Cannot Be Empty!");
+    z.focus();
+    return false;
+    }
+    if(j!="string")
+    {
+      window.alert("Invalid Mobile Number!");
+      mob.focus();
+      return false;
+    }
+    if (m.length != 10) {
+    window.alert("Enter 10 Digit Mobile Number!");
+    mob.focus();
+    return false;
+    }
+    if (ch != "harry"&&ch != "ron"&&ch != "hermoine"&&ch != "nevil"&&ch != "fred"&&ch != "george"&&ch != "malfoy"&&ch != "snape"&&ch != "dumbledore"&&ch != "sirius"&&ch != "hagrid") {
+    window.alert("Ye Kab Tha Harry Potter Me?");
+    ch.focus();
+    return false;
+    }
+    if(check=="a"||check=="e"||check=="i"||check=="o"||check=="u")
+    {
+      window.alert("You are an intern");
+    return false;
+    }
+    else
+    {
+    window.alert("You are not an intern");
+    return false;
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+h1{
+    color:aqua;
+}
+div.newone{
+   display: list-item;
+   color: red;
+   border : dashed darkorange;
+   background-color: lightcoral; 
+   
+}
+span{
+    display : block;
+    color : green;
+}
+h3.hidden{
+    display : visible;
+}
+div.static{
+    position: static;
+    border : 3px solid #815ce6;
+    right : 30px;
+}
+div.relative{
+    position : relative;
+    border :4px solid darkblue;
+    right :30px;
+}
+div.fixed{
+    position : fixed;
+    border : 3px solid rgb(21, 223, 105);
+    bottom : 70px;
+    top :100px;
+    width : 30px;
+}
+div.absolute{
+    position: absolute;
+    border : 4px solid black;
+    width : 200px;
+    height :100px;
+    right : 600px;
+}
+div.rela{
+    position: relative;
+    border : 4px solid purple;
+    width : 450px;
+    height : 190px;
+   padding-right: 490px;
+}
+div.sticky{
+    position :sticky;
+    border : lightgreen;
+    width : 200px;
+    height: 30px;
+}
+h4{
+    color:crimson;
+}
+h3{
+    color : yellow;
+}
+/* img.transp{
+opacity :1.0;
+z-index:-1;
+position :relative;
+width: 80%;
+left: 60px;
+top: 3em;
+} */
+.photo__img--framed{
+    border:3px solid blue;
+}
+.photo__caption--large{
+    font:bolder;
+    font-style: italic;
+}
+img.forming
+{
+    border : 3px solid;
+    /* z-index :3;
+    position :absolute;
+    
+    bottom: 25px; */
+    max-width :100%;
+    height: auto;
+
+}
+.grid-container
+{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto ;
+
+    /* justify-content: space-around; */
+    background-color: lightblue  ;
+    padding: 12px;
+    
+}
+.grid-item{
+    background-color: rgb(18, 68, 99);
+    text-align: center;
+    padding:22px;
+    font-size: large;
+
+}
+div.model
+{
+    
+    padding: 50px;
+    margin : 20 px;
+    border : 5px solid brown;
+    font-display:block;
+    position : absolute;
+    z-index:-1;
+    
+   
+
+}
+div.back
+{
+    background-color: lavenderblush;
+    background-image: url("medical device.jpg");
+    background-size: cover;
+   
+    position :relative;
+}
+.max-width
+{
+    width:100%;
+    height:10px;
+    padding: 0  80px;
+    margin: auto;
+}
+.navbar{
+    
+    width:100%;
+    position:fixed;
+  
+    margin :auto;
+    z-index:999;
+    transition :0.3 ease-in;  
+       padding : 15px,0;
+        background:rgb(21, 223, 105);
+
+
+}
+.navbar.max-width{
+    display:flex;
+    align-items :center;
+    justify-content: space-between;
+
+
+}
+.menu-btn
+{
+    color:#fff;
+    cursor:pointer;
+    display :none;
+    font-size:23px;
+}
+.flex-container
+{
+    display : flex;
+    flex-wrap :nowrap;
+    background:dodgerblue;
+}
+.flex-container > div{
+    background:white;
+    margin:20px;
+    text-align:center;
+    line-height:100;
+    font-size : 100px;
+    line-height :140px;
+}
+.square
+{
+    height :100px;
+    width :100px;
+    background: red;
+    position: relative;
+    animation : mymove 5s infinite;
+}
+@keyframes mymove
+{
+    from{left:0px;}
+    to{left:200px;}
+}
+.circle
+{
+    border-radius : 50%;
+    background :yellow;
+    width:200px;
+    height:200px;
+    position: absolute;
+    animation : mymove2 5s infinite;
+}
+@keyframes mymove2
+{
+    from{left:0px;}
+    to{right:600px}
+}
+.parallelogram
+{
+    width:150px;
+    height : 100px;
+    transform : skew(25deg);
+    background:olive;
+}
+.triangle
+{
+    width :0;
+    height:0;
+    border-left:150px solid transparent;
+    border-right:150px solid transparent;
+    border-bottom: 100px solid red;
+
+}
+.path
+{
+    stroke-dasharray: 20;
+    animation : dash 5s linear;
+}
+@keyframes dash{
+   
+     to 
+     {
+         
+         stroke-dashoffset:1000;
+     }
+}
+.carousel-inner img{
+    width:100%;
+    height:100%;
+}
+.box2{
+    background :lavenderblush;
+    width : 200px;
+    height :200px;
+
+}
+::-webkit-scrollbar
+{
+    width :10px
+}
+::-webkit-scrollbar-track{
+    background:#f1f;
+}
+::-webkit-scrollbar-thumb{
+    background :#888;
+}
+::-webkit-scrollbar-thumb:hover{
+    background : #555;
+}
+.anima
+{
+    width :130px;
+    height :130px;
+    background:lawngreen;
+    animation-name:moving;
+    animation-duration:4s;
+}
+@keyframes moving
+{
+    0% {background-color: lightblue;}
+    25% {background-color: lightgreen;}
+    50% {background-color: lightseagreen;}
+    100% {background-color: maroon;}
+}
+.span
+{
+    display:inline-block
+}
